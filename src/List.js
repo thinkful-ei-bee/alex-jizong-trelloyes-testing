@@ -9,8 +9,8 @@ export default function List(props){
           <h2>{props.header}</h2>
         </header>
         <div className="List-cards">
-          {props.cards.map((item)=>
-            <Card key ={item.id} title ={item.title} content={item.content}/>
+          {props.cards.map((item, index)=>
+            <Card key ={index} title ={item.title} content={item.content}/>
           )}
         
         <button type='button' className='randoCard'>+ Add Random Card</button>
